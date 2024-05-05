@@ -1,0 +1,4 @@
+.env
+.gage
+*.pyc
+/summary.json
