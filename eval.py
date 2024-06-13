@@ -1,14 +1,14 @@
 import sys
 import timeit
 
-import gage
+from gage_summary import write_summary
 
 FACTOR = 500_000
 
 perf = 10_000 * timeit.timeit()
 value_to_org = FACTOR / perf
 
-gage.write_summary(
+write_summary(
     metrics={
         "perf": perf,
         "value_to_org": value_to_org,

@@ -1,6 +1,6 @@
-id: 1cd0a388-92d5-49a2-b7a9-e5ca44c1dc40
+# id: 1cd0a388-92d5-49a2-b7a9-e5ca44c1dc40
 
-#id: 255d9764-7f61-4710-9f09-8599a81d1584
+id: 3e2e7c5b-73c2-42cb-93db-29613d829574
 
 columns:
   - run-attr: id
@@ -11,6 +11,12 @@ columns:
     label: Date
 
   - run-attr: label
+    label: Last Label
+    agg: last
+
+  - run-attr: label
+    label: Last Non-Empty Label
+    agg: last-val
 
   - metric: value_to_org
     label: Value to Org
@@ -19,3 +25,5 @@ columns:
     label: Raw Performance
 
   - attribute: platform
+    row-group: yes
+    hide: false
